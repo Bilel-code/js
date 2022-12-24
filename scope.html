@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Function scope example</title>
+  </head>
+<body>
+
+  <script>
+    
+
+   
+    function add7(number){
+        return number+7;
+}
+let x = 5;
+let y = 4;
+console.log( add7(x) );
+function multiply(number1,number2){
+        return number1*number2;
+}
+console.log(multiply(x,y));
+
+function capitalize(string){
+    return string.charAt(0).toUpperCase()+string.slice(1);
+}
+console.log(capitalize("hello!"));
+
+function lastLetter(string){
+    return string.slice(-1);
+}
+console.log(lastLetter('bilel'));
+  </script>
+</body>
+</html>
